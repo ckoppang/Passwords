@@ -14,10 +14,10 @@ I did not implement the second suggestion of encrypting just the password since 
 The key used for encryption is stored in an environment variable called SECRET_KEY. You need to either define the environment variable or create a .env file with with SECRET_KEY in it.
 
 To create an initial SECRET_KEY run the following
-'''
+```
 from cryptography.fernet import Fernet
 print(Fernet.generate_key().decode())
-'''
+```
 
 ## Running
  - For initial login check the master_login.json decl in the code.
